@@ -1,7 +1,7 @@
 @extends('template.layout')
 
 @push('title')
-Add Post
+Add Post 
 @endpush
 
 @section('content')
