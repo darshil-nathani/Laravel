@@ -9,8 +9,9 @@
   </head>
 </head>
 <body>
-    <div class="container">
+
         @include('template.header')
+    <div class="container">
         @yield('content')
         @include('template.footer')
     </div>
