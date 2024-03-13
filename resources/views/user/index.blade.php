@@ -42,6 +42,9 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            <div class="mt-5">
+                                {{ $myposts->links('pagination::bootstrap-4') }}
+                            </div>
                         </div>
                     </div>
                 </div>

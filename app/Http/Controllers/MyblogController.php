@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 class MyblogController extends Controller
 {
     public function index(){
-        $myposts = Myblog::get();
+        $myposts = Myblog::paginate(5);
         return view('user.index', compact('myposts'));
+
     }
     public function contactUs(){
         return view('user.contactus');
