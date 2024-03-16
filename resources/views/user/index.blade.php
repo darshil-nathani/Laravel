@@ -12,7 +12,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-hover table-striped table-bordered">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -43,7 +43,7 @@
                                 </tbody>
                             </table>
                             <div class="mt-5">
-                                {{ $myposts->links('pagination::bootstrap-4') }}
+                                {{ $myposts->links('pagination::bootstrap-5') }}
                             </div>
                         </div>
                     </div>

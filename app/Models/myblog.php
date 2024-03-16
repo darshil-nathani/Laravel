@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class myblog extends Model
 {
     use HasFactory;
+    // public $timestamp = false;
 }
