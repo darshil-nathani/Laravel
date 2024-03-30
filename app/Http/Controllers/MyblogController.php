@@ -36,6 +36,11 @@ class MyblogController extends Controller
         return redirect()->route('mypost.index');
     }
     public function store(Request $request){
+        $request -> validate([
+            'title' => 'required',
+            'subtitle' => 'required',
+            'body_content' => 'required',
+        ]);
         $myblog = new Myblog();
         $myblog->title = $request->title;
         $myblog->subtitle = $request->subtitle;
